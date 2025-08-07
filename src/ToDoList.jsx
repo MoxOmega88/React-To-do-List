@@ -39,7 +39,7 @@ function ToDoList(){
   }
   return(
     <div className="to-do-list">
-      <h1>🗓️ To Do List </h1>
+      <h1>🗓️ To-Do List </h1>
       <input type="text" placeholder="Enter the task" value={newTask} onChange={handleInputChange}/>
       <button className="add-button" onClick={addTask}> ➕</button>
 
@@ -50,6 +50,7 @@ function ToDoList(){
         <button className="delete-button" onClick={()=>deleteTask(index)}>🗑️ Delete</button>
         <button className="move-button" onClick={()=>moveTaskUp(index)}>☝</button>
         <button className="move-button" onClick={()=>moveTaskDown(index)}>👇</button>
+        <input type="checkbox" id="cb" name="cb"/>
       </li>
       )}
     </ol>

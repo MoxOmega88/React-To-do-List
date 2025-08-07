@@ -42,16 +42,20 @@ ol{
   background-color: rgb(226, 74, 74);
   color: azure;
   font-size: 18px;
+  margin-right: 6px;
 }
 .move-button{
   background-color: rgb(92, 119, 179);
   margin: 6px;
   font-size: 18px;
+  padding-left: 6px;
+  margin-left: 6px;
 }
 button{
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.5s ease;
+  transition: transform background-color 0.5s ease;
+  
 }
 li{
   font-weight: bold;
@@ -61,4 +65,46 @@ li{
   align-items: center;
   border: 4px solid rgb(12, 69, 104);
   border-radius: 14px;
+}
+/* Hide default checkbox */
+li input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  padding: 6px;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+/* Checked state */
+li input[type="checkbox"]:checked {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+/* Checkmark */
+li input[type="checkbox"]:checked::after {
+  content: "✔";
+  position: absolute;
+  top: 0;
+  left: 4px;
+  font-size: 8px;
+  color: white;
+}
+.move-button:hover{
+  background-color: rgb(30, 60, 117);
+}
+.delete-button:hover{
+  background-color: #880000;
+  
+}
+button:hover{
+  transform: scale(1.1);
+}
+.add-button:hover{
+  background-color: #109f12;
 }

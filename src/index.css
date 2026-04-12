@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +12,115 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+=======
+.to-do-list{
+  border-color: black;
+  margin-top: 70px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+body{
+  background-color: rgb(203, 238, 248);
+}
+h1{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 80px;
+  color: rgb(1, 2, 104);
+}
+input{
+  border-radius: 6px;
+  border-color: black;
+  font-size: 25px;
+  background-color: rgb(166, 226, 251);
+  color: rgb(3, 0, 81);
+}
+.add-button{
+  font-size: 20px;
+  border-radius: 10px;
+  border-color: rgb(0, 0, 0);
+  background-color: rgb(119, 243, 114);
+  color: rgb(14, 0, 103);
+  margin-left: 12px;
+}
+.text{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 25px;
+  color: rgb(0, 0, 87);
+  flex: 1;
+}
+ol{
+  color: rgb(11, 0, 97);
+  font-size: 25px;
+}
+.delete-button{
+  background-color: rgb(226, 74, 74);
+  color: azure;
+  font-size: 18px;
+  margin-right: 6px;
+}
+.move-button{
+  background-color: rgb(92, 119, 179);
+  margin: 6px;
+  font-size: 18px;
+  padding-left: 6px;
+  margin-left: 6px;
+}
+button{
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform background-color 0.5s ease;
+  
+}
+li{
+  font-weight: bold;
+  padding: 18px;background-color: rgb(167, 230, 255);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  border: 4px solid rgb(12, 69, 104);
+  border-radius: 14px;
+}
+/* Hide default checkbox */
+li input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  padding: 6px;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+/* Checked state */
+li input[type="checkbox"]:checked {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+/* Checkmark */
+li input[type="checkbox"]:checked::after {
+  content: "✔";
+  position: absolute;
+  top: 0;
+  left: 4px;
+  font-size: 8px;
+  color: white;
+}
+.move-button:hover{
+  background-color: rgb(30, 60, 117);
+}
+.delete-button:hover{
+  background-color: #880000;
+  
+}
+button:hover{
+  transform: scale(1.1);
+}
+.add-button:hover{
+  background-color: #109f12;
+}
+>>>>>>> 7a233242d38776ac078a46d08b1f479dc0ab94c8

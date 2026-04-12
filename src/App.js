@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import logo from './logo.svg';
 import './App.css';
 
@@ -23,3 +24,12 @@ function App() {
 }
 
 export default App;
+=======
+import ToDoList from './ToDoList.jsx'
+function App() {
+  return(<>
+  <ToDoList/>
+  </>);
+}
+export default App
+>>>>>>> 7a233242d38776ac078a46d08b1f479dc0ab94c8

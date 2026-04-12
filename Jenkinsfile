@@ -3,7 +3,7 @@ pipeline {
     
     // This tells Jenkins to pull the tool we just configured
     tools {
-        dependencyCheck 'DP-Check' 
+        'dependency-check' 'DP-Check' 
     }
 
     stages {
